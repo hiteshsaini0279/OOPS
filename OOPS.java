@@ -1,26 +1,26 @@
 
-//
-//
-//class BankAccount{
+
+
+// class BankAccount{
 //    public String Username;
 //    private String password;
 //    void SetPwd(String pwd){
 //        password=pwd;
 //    }
-//}
-//
-//class Student {
+// }
+
+// class Student {
 //    String name;
 //    int rollno;
 //    String password;
 //    int marks[];
 //    /// shallow copy
-////    Student(Student s1){
-////        marks= new int[3];
-////        this.name= s1.name;
-////        this.rollno=s1.rollno;
-////     this.marks=s1.marks;
-////    }
+// //    Student(Student s1){
+// //        marks= new int[3];
+// //        this.name= s1.name;
+// //        this.rollno=s1.rollno;
+// //     this.marks=s1.marks;
+// //    }
 //    /// deep copy
 //        Student(Student s1){
 //             marks= new int[3];
@@ -33,36 +33,36 @@
 //    Student(){
 //        marks= new int[3];
 //        System.out.println("constructor called...");
-//
+
 //    }
 //    Student( String name){
 //        marks= new int[3];
 //   this.name= name;
-//
+
 //    }
 //    Student(int rollno){
 //        marks= new int[3];
 //        this.rollno=rollno;
 //    }
-//}
-//
-//class Pen{
+// }
+
+// class Pen{
 //   private String color;
 //  private int tip;
-//
-//String getColor(){
+
+// String getColor(){
 //    return this.color;
-//}
-//int getTip(){
+// }
+// int getTip(){
 //    return this.tip;
-//}
+// }
 // void SetColor(String newcolor){
 //    this.color=newcolor;
-//}
-//}
-//
-//
-//class Animal{
+// }
+// }
+
+
+// class Animal{
 //    String color;
 //    void eat(){
 //        System.out.println("eats");
@@ -70,45 +70,45 @@
 //    void breathe(){
 //        System.out.println("breathe");
 //    }
-//}
-//
-//
-//class fish extends Animal{
+// }
+
+
+// class fish extends Animal{
 //    int fins;
 //            void swim(){
 //                System.out.println("swim");
 //            }
-//}
-//
-//
-//class Mammels extends Animal{
-//void walk(){
+// }
+
+
+// class Mammels extends Animal{
+// void walk(){
 //    System.out.println("walks");
-//}
-//}
-////class Dog extends Mammels{
-////    String color;
-////}
-//
-//
-//
-//class Birds extends Animal{
+// }
+// }
+// //class Dog extends Mammels{
+// //    String color;
+// //}
+
+
+
+// class Birds extends Animal{
 //    void fly(){
 //        System.out.println("fly");
 //    }
-//}
-//
-//class Peacock extends Birds{
+// }
+
+// class Peacock extends Birds{
 //    void birdfly(){
 //        System.out.println("peacock fly!!!");
 //    }
-//}
-//class pigeon extends Birds{
+// }
+// class pigeon extends Birds{
 //    void pigeonfly(){
 //        System.out.println("peacock fly!!!");
 //    }
-//}
-//public class OOPS {
+// }
+// public class OOPS {
 //    public static void main(String[]args){
 //        Calculator calc= new Calculator();
 //        System.out.println(calc.sum(2.677f,3.9f));
@@ -121,9 +121,9 @@
 //        c.eats();
 //        c.walk();
 //    }
-//}
+// }
 
-//class Calculator{
+// class Calculator{
 //    int sum(int a, int b){
 //        return a+b;
 //    }
@@ -133,7 +133,7 @@
 //    int sum(int a, int b, int c){
 //        return a+b+c;
 //    }
-//}
+// }
 
 
 // abstract class Animal{
@@ -141,57 +141,57 @@
 //        System.out.println("Animal eats");
 //    }
 //    abstract void walk();
-//}
-//
-//class Horse extends Animal{
+// }
+
+// class Horse extends Animal{
 //    void walk(){
 //        System.out.println("With four legs");
 //    }
-//}
-//
-//class Chicken extends Animal{
+// }
+
+// class Chicken extends Animal{
 //    void walk(){
 //        System.out.println("With two legs");
 //    }
-//}
+// }
 
 
-//
-//public class OOPS {
+
+// public class OOPS {
 //    public static void main(String[]args){
 //  Student s1= new Student();
 //  s1.schoolname="jbvp";
-//
+
 //        Student s2= new Student();
 //        System.out.println(s2.schoolname);
 //    }
-//}
+// }
 
-//interface  Chess{
+// interface  Chess{
 //    void moves();
-//}
-//
-//class  Queen implements Chess{
+// }
+
+// class  Queen implements Chess{
 //    public void moves(){
 //        System.out.println("All direction");
 //    }
-//}
-//
-//class  Rook implements Chess{
+// }
+
+// class  Rook implements Chess{
 //    public void moves(){
 //        System.out.println("diagonal direction");
 //    }
-//}
-//
-//class  Pawn implements Chess{
+// }
+
+// class  Pawn implements Chess{
 //    public void moves(){
 //        System.out.println("1,2 steps up,back direction");
 //    }
-//}
+// }
 
 
 
-//class Student {
+// class Student {
 //    String name;
 //    int rollno;
 //     static String schoolname;
@@ -201,7 +201,7 @@
 //     String getName(){
 //         return this.name;
 //     }
-//}
+// }
 
 
 
@@ -209,20 +209,20 @@
 
 
 
-/// OOPS
+// / OOPS
 
-//import java.util.*;
-//public class OOPS {
+// import java.util.*;
+// public class OOPS {
 //    public static void main(String[]args){
 //        Pen p1= new Pen();
 //        p1.Setcolor("blue");
-////        p1.color="yellow";
+// //        p1.color="yellow";
 //        System.out.println(p1.color);
-////        p1.tip=23;
-////        System.out.print(p1.tip);
+// //        p1.tip=23;
+// //        System.out.print(p1.tip);
 //    }
-//}
-//class Pen{
+// }
+// class Pen{
 //    String color;
 //    int tip;
 //    void Setcolor(String newcolor){
@@ -231,18 +231,18 @@
 //    void SetTip(int newtip){
 //        tip=newtip;
 //    }
-//
-//}
 
-//public class OOPS {
+// }
+
+// public class OOPS {
 //    public static void main(String[]args){
 //  pen p1=new pen();
-////  p1.color="yellow";
+// //  p1.color="yellow";
 //        p1.Setcolor("blue");
 //  System.out.print(p1.color);
 //    }
-//}
-//class pen {
+// }
+// class pen {
 //    int tip;
 //    String color;
 //    void Setcolor(String newcolor){
@@ -252,12 +252,12 @@
 //        tip=newTip;
 //    }
 //        }
-//public class OOPS {
+// public class OOPS {
 //    public static void main(String[]args){
-//
+
 //    }
-//}
-//class pen{
+// }
+// class pen{
 //    int tip; String color;
 //    int GetTip(){
 //        return this.tip;
@@ -271,11 +271,11 @@
 //    void SetTip(int newTip){
 //        tip=newTip;
 //    }
-//}
+// }
 
-///// basic oops concept
+// /// basic oops concept
 
-//class Pen{
+// class Pen{
 //    int tip;
 //    String color;
 //    void setnewColor(String newColor){
@@ -284,20 +284,20 @@
 //    void setnewTip(int newTip){
 //        tip=newTip;
 //    }
-//}
-//
-//public class OOPS {
+// }
+
+// public class OOPS {
 //    public static void main(String[]args){
 //        Pen p1=new Pen();
-////        p1.color="yellow";
-////        p1.tip=8;
+// //        p1.color="yellow";
+// //        p1.tip=8;
 //        p1.setnewColor("pink");
 //        p1.setnewTip(7);
 //        System.out.println(p1.color);
 //        System.out.println(p1.tip);
 //    }
-//}
-//////// Getters and Setters
+// }
+// ////// Getters and Setters
 // class Pen{
 //     int tip;
 //     String color;
@@ -313,40 +313,40 @@
 //     void setnewTip(int newTip){
 //         tip=newTip;
 //     }
-//}
-//
-//public class OOPS {
+// }
+
+// public class OOPS {
 //    public static void main(String[] args){
 //        Pen p1=new Pen();
 //       p1.setnewTip(9);
 //       System.out.println(p1.getTip());
 //    }
-//}
+// }
 
-///// creating constructor and encapsulation
-//
-//class Student{
+// /// creating constructor and encapsulation
+
+// class Student{
 //    int roll;
 //    String name;
-//
+
 //    Student (String name){
 //        this.name=name;
 //    }
-//}
-//
-//
-//public class OOPS {
+// }
+
+
+// public class OOPS {
 //    public static void main(String[]args){
 //        Student s1= new Student("Hitesh");
 //        System.out.println(s1.name);
-//
+
 //    }
-//}
+// }
 
 
-//// copy constructor
+// // copy constructor
 
-//class student{
+// class student{
 //    String name;
 //    int rollNo;
 //    String password;
@@ -370,9 +370,9 @@
 //        marks=new int[3];
 //        this.rollNo=rollNo;
 //    }
-//}
-//
-//public class OOPS {
+// }
+
+// public class OOPS {
 //    public static  void main(String[] args){
 //  student s1= new student();
 //  s1.name= "Hitesh saini";
@@ -382,17 +382,17 @@
 //  s1.marks[1]=100;
 //  s1.marks[2]=99;
 //  student s2=new student(s1);
-//
+
 //  for(int i=0; i<3; i++) {
 //      System.out.println(s2.marks[i]);
 //  }
 //    }
-//}
+// }
 
-///// Inharitance
+// /// Inharitance
 
 
-//class Animal{
+// class Animal{
 //    String color;
 //    void Swim(){
 //        System.out.println(" Swimming ");
@@ -400,76 +400,76 @@
 //    void Eat(){
 //        System.out.println(" FOOD is good ");
 //    }
-//}
-//
-//class Fish extends Animal{
+// }
+
+// class Fish extends Animal{
 //    int fins;
 //    void Setfins(int newfins){
 //        fins=newfins;
 //    }
-//}
-//
-//public class OOPS {
+// }
+
+// public class OOPS {
 //    public static void main(String[] args){
-//Fish shark =new Fish();
-//shark.Eat();
-//shark.fins=3;
-//System.out.println(shark.fins);
+// Fish shark =new Fish();
+// shark.Eat();
+// shark.fins=3;
+// System.out.println(shark.fins);
 //    }
-//}
+// }
 
 
-////multi level inharitance;
+// //multi level inharitance;
 
-//public class OOPS {
+// public class OOPS {
 //    public  static void main(String[]args){
-//dog dobby= new dog();
+// dog dobby= new dog();
 // dobby.eat();
 //    }
-//}
-//
-//
-//class animal{
+// }
+
+
+// class animal{
 // void eat(){
 //     System.out.println("khana kha rha hu");
 // }
 // void breathe(){
 //     System.out.println("saans le rha hu");
 // }
-//}
-//class mammels extends animal{
+// }
+// class mammels extends animal{
 //    int legs;
-//}
-//class dog extends mammels{
+// }
+// class dog extends mammels{
 //    String bread;
-//}
+// }
 
-/// single level inharitance
+// / single level inharitance
 // public class OOPS {
 //     public static void main(String[]args){
 //         Fish shark= new Fish();
 //         shark.eats();
 //     }
-//}
-//class animal{
+// }
+// class animal{
 //     void eats(){
 //         System.out.println(" khana kha rha hu");
 //     }
 //     void Breath(){
 //         System.out.println("sans le rha hu");
 //     }
-//}
-//class Fish extends animal{
+// }
+// class Fish extends animal{
 //     int fins;
-//
-//}
+
+// }
 
 
 
 
 
-/// hirarchical inharitance
-//public class OOPS {
+// / hirarchical inharitance
+// public class OOPS {
 //    public static void main(String[]args){
 //        birds pigeon =new birds();
 //        pigeon.eat();
@@ -478,18 +478,18 @@
 //        mammels dog=new mammels();
 //        dog.howMuch(3);
 //        dog.walk();
-//
+
 //    }
-//}
-//class Animals{
+// }
+// class Animals{
 //    void eat(){
 //        System.out.println("har animal khata h yarr");
 //    }
 //    void breathe(){
 //        System.out.println("sans to lege hi na ladle ");
 //    }
-//}
-//class mammels extends Animals{
+// }
+// class mammels extends Animals{
 //    int legs;
 //    void howMuch( int leg){
 //        this.legs=leg;
@@ -497,24 +497,24 @@
 //    void walk(){
 //        System.out.println(" chalta hu be chutiye");
 //    }
-//}
-//class birds extends Animals{
+// }
+// class birds extends Animals{
 //    int fins;
 //    void fly(){
 //        System.out.println("udta hi firu en hawao me kahi ");
 //    }
-//}
+// }
 
 
-//public class OOPS {
+// public class OOPS {
 //    public static  void  main (String[]args){
 //        Pen p1= new Pen();
 //        p1.color="yellow";
 //        System.out.println(p1.color);
-//p1.setColor("blue");
+// p1.setColor("blue");
 //        System.out.println(p1.color);
-//
-//
+
+
 //    }
 //   static  class Pen {
 //        int tip;
@@ -526,16 +526,16 @@
 //            tip= newTip;
 //        }
 //    }
-//
-//}
+
+// }
 
 
-/// Getters and setters
-//public class OOPS {
+// / Getters and setters
+// public class OOPS {
 //    public static void main(String[] args){
 //        Pen p1= new Pen();
 //        p1.color="yellow";
-////        System.out.println(p1.getColor());
+// //        System.out.println(p1.getColor());
 //        p1.setColor("blue");
 //        System.out.println(p1.getColor());
 //    }
@@ -555,10 +555,25 @@
 //            return this.tip;
 //        }
 //    }
-//}
+// }
 
 
-
+/// CONTRUCOTOR
+public class OOPS {
+    static class Pen{
+        int tip;
+        String color;
+        Pen(String color,int tip){
+            this.color=color;
+            this.tip=tip;
+        }
+    }
+    public static void main(String[]args){
+        Pen p1= new Pen("yellow",6);
+        System.out.println(p1.color);
+        System.out.println(p1.tip);
+    }
+}
 
 
 
