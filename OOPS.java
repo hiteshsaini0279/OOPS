@@ -577,50 +577,73 @@
 
 // copy constructor
 
+// public class OOPS{
+//    static  class Student {
+//         String name;
+//         int roll_no;
+//         String password;
+//         int marks[];
+//         Student(){
+//             this.marks= new int[3];
+//             System.out.println("constructor is called");
+//         }
+//        Student (String name){
+//              this.marks= new int[3];
+//    this.name=name;
+//         }
+//          Student(int roll_no){
+//             this.roll_no=roll_no;
+//             this.marks= new int[3];
+//         }
+//          Student (Student s1){
+//             this.name=s1.name;
+//             this.roll_no=s1.roll_no;
+//             this.password=s1.password;
+//            this.marks= s1.marks;
+//         }
+//      }
+//      public static void main(String[]args){
+//         Student s1= new Student();
+//         s1.name="hitesh";
+//   s1.roll_no=23;
+//   s1.password="hit";
+//   s1.marks[0]=90;
+//   s1.marks[1]=100;
+//   s1.marks[2]=99;
+//   Student s2= new Student(s1);
+// for(int i=0; i<3; i++){
+//     System.out.println(s2.marks[i]);
+// }
+
+
+//      }
+// }
+
+/// Inheritance
+    class Animal {
+         String color;
+          int legs;
+             void  eats(){
+            System.out.println("Animal can eat ");
+           }
+            void  breathe(){
+            System.out.println("it can breathe ");
+           }
+
+     }
+      class Fish extends Animal{
+         String type;
+           void IsSwim(){
+            System.out.println(" tair skti h ladle ");
+         }
+      }
 public class OOPS{
-   static  class Student {
-        String name;
-        int roll_no;
-        String password;
-        int marks[];
-        Student(){
-            this.marks= new int[3];
-            System.out.println("constructor is called");
-        }
-       Student (String name){
-             this.marks= new int[3];
-   this.name=name;
-        }
-         Student(int roll_no){
-            this.roll_no=roll_no;
-            this.marks= new int[3];
-        }
-         Student (Student s1){
-            this.name=s1.name;
-            this.roll_no=s1.roll_no;
-            this.password=s1.password;
-           this.marks= s1.marks;
-        }
-     }
-     public static void main(String[]args){
-        Student s1= new Student();
-        s1.name="hitesh";
-  s1.roll_no=23;
-  s1.password="hit";
-  s1.marks[0]=90;
-  s1.marks[1]=100;
-  s1.marks[2]=99;
-  Student s2= new Student(s1);
-for(int i=0; i<3; i++){
-    System.out.println(s2.marks[i]);
+      public static  void main(String[]args){
+        Fish shark= new Fish();
+        shark.color="yellow";
+        System.out.println(shark.color);
+      }
 }
-
-
-     }
-}
-
-
-
 
 
 
