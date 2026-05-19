@@ -559,26 +559,65 @@
 
 
 /// CONTRUCOTOR
-public class OOPS {
-    static class Pen{
-        int tip;
-        String color;
-        Pen(String color,int tip){
-            this.color=color;
-            this.tip=tip;
+// public class OOPS {
+//     static class Pen{
+//         int tip;
+//         String color;
+//         Pen(String color,int tip){
+//             this.color=color;
+//             this.tip=tip;
+//         }
+//     }
+//     public static void main(String[]args){
+//         Pen p1= new Pen("yellow",6);
+//         System.out.println(p1.color);
+//         System.out.println(p1.tip);
+//     }
+// }
+
+// copy constructor
+
+public class OOPS{
+   static  class Student {
+        String name;
+        int roll_no;
+        String password;
+        int marks[];
+        Student(){
+            this.marks= new int[3];
+            System.out.println("constructor is called");
         }
-    }
-    public static void main(String[]args){
-        Pen p1= new Pen("yellow",6);
-        System.out.println(p1.color);
-        System.out.println(p1.tip);
-    }
+       Student (String name){
+             this.marks= new int[3];
+   this.name=name;
+        }
+         Student(int roll_no){
+            this.roll_no=roll_no;
+            this.marks= new int[3];
+        }
+         Student (Student s1){
+            this.name=s1.name;
+            this.roll_no=s1.roll_no;
+            this.password=s1.password;
+           this.marks= s1.marks;
+        }
+     }
+     public static void main(String[]args){
+        Student s1= new Student();
+        s1.name="hitesh";
+  s1.roll_no=23;
+  s1.password="hit";
+  s1.marks[0]=90;
+  s1.marks[1]=100;
+  s1.marks[2]=99;
+  Student s2= new Student(s1);
+for(int i=0; i<3; i++){
+    System.out.println(s2.marks[i]);
 }
 
 
-
-
-
+     }
+}
 
 
 
