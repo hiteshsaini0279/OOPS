@@ -648,49 +648,81 @@
 /// single level inharitance
 
 
+// class  Animal{
+//         String color;
+//          void eat(){
+//             System.out.println(" this animal can eat ");
+//          }
+//          void breathe(){
+//             System.out.println(" this can breathe");
+//          }
+// }
+
+
+// class Fish extends Animal{   // here  fish  extends- properties , methods  -> Animal
+//       String type;
+//       int  fins;
+
+// void   isSwim(){
+//       System.out.println(" this can swim");
+// }
+// }
+
+
+// public class OOPS{ 
+//       public static void main(String[]args){
+//             Fish  shark= new  Fish();
+//             shark.color="navy blue";
+//              shark.eat();
+//              shark.isSwim();
+//              System.out.println(shark.color);
+//       }
+
+// }
+
+
+
+
+///multi level inheritance
+
+
 class  Animal{
-        String color;
-         void eat(){
-            System.out.println(" this animal can eat ");
+      String color;
+       void  eats(){
+               System.out.println("  kha skte h ladle ");
+       }
+        void breathe(){
+            System.out.println("  sans to lege hi ladle ");
+        }
+}
+ class Mammel  extends  Animal{
+        int  height;
+            void  fly(){
+                  System.out.println(" ud nhi skte  laadle ");
+            }
+             void isSwim(){
+                   System.out.println("  naa hi ter skte ladle ");
+             }
+ }
+   
+ class  Dog extends  Mammel{
+         void  bark(){
+              System.out.println(" kutta to bhokega hi laadle !! ");
          }
-         void breathe(){
-            System.out.println(" this can breathe");
-         }
+ }
+
+
+
+public class    OOPS{
+       public static  void main(String[] args){
+             Dog  germanDog = new Dog();
+             germanDog.fly();
+             germanDog.color= "yellow";
+             germanDog.bark();
+             germanDog.eats();
+              System.out.println(germanDog.color);
+       }
 }
-
-
-class Fish extends Animal{   // here  fish  extends- properties , methods  -> Animal
-      String type;
-      int  fins;
-
-void   isSwim(){
-      System.out.println(" this can swim");
-}
-}
-
-
-public class OOPS{ 
-      public static void main(String[]args){
-            Fish  shark= new  Fish();
-            shark.color="navy blue";
-             shark.eat();
-             shark.isSwim();
-             System.out.println(shark.color);
-      }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
