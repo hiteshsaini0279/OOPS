@@ -620,29 +620,64 @@
 // }
 
 /// Inheritance
-    class Animal {
-         String color;
-          int legs;
-             void  eats(){
-            System.out.println("Animal can eat ");
-           }
-            void  breathe(){
-            System.out.println("it can breathe ");
-           }
+//     class Animal {
+//          String color;
+//           int legs;
+//              void  eats(){
+//             System.out.println("Animal can eat ");
+//            }
+//             void  breathe(){
+//             System.out.println("it can breathe ");
+//            }
 
-     }
-      class Fish extends Animal{
-         String type;
-           void IsSwim(){
-            System.out.println(" tair skti h ladle ");
+//      }
+//       class Fish extends Animal{
+//          String type;
+//            void IsSwim(){
+//             System.out.println(" tair skti h ladle ");
+//          }
+//       }
+// public class OOPS{
+//       public static  void main(String[]args){
+//         Fish shark= new Fish();
+//         shark.color="yellow";
+//         System.out.println(shark.color);
+//       }
+// }
+
+/// single level inharitance
+
+
+class  Animal{
+        String color;
+         void eat(){
+            System.out.println(" this animal can eat ");
          }
+         void breathe(){
+            System.out.println(" this can breathe");
+         }
+}
+
+
+class Fish extends Animal{   // here  fish  extends- properties , methods  -> Animal
+      String type;
+      int  fins;
+
+void   isSwim(){
+      System.out.println(" this can swim");
+}
+}
+
+
+public class OOPS{ 
+      public static void main(String[]args){
+            Fish  shark= new  Fish();
+            shark.color="navy blue";
+             shark.eat();
+             shark.isSwim();
+             System.out.println(shark.color);
       }
-public class OOPS{
-      public static  void main(String[]args){
-        Fish shark= new Fish();
-        shark.color="yellow";
-        System.out.println(shark.color);
-      }
+
 }
 
 
