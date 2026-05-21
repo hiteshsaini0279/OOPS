@@ -730,61 +730,107 @@
 
 
 
-class Animal{
+// class Animal{
+//       String color;
+//       void eat(){
+//             System.out.println("kha skte h ");
+//       }
+//       void breathe(){
+//             System.out.println("sans to lege hi  na ladle ");
+//       }
+// }
+
+// class Mammel extends Animal{
+//        String type;
+//         void  walk(){
+//             System.out.println("  chal to skte h hi ladle");
+//         }
+//          void run(){
+//             System.out.println("bhag skte h ladle ");
+//          }
+// }
+//  class Fish extends Animal{
+//        String typeOfFish;
+//         void  isSwim(){
+//             System.out.println("ter skte h ladle ");
+//         }
+//  }
+//   class Bird  extends  Animal{
+//          String typeOfBird;
+//           void fly(){
+//             System.out.println("  ud skte h ladle ");
+//           }
+
+//   }
+//  public class OOPS{
+//       public  static void main(String[]args){
+//             Bird pigeon = new Bird();
+//             pigeon.eat();
+//        pigeon.fly();
+//        Fish  shark = new Fish();
+//        shark.isSwim();
+//        shark.eat();
+//        shark.breathe();
+//        Mammel  dog= new Mammel();
+//         dog.run();
+//         dog.eat();
+//         dog.breathe();
+//       }
+
+//  }
+
+
+
+//// hybrid level intheritance 
+ class Animal{
       String color;
-      void eat(){
-            System.out.println("kha skte h ");
-      }
-      void breathe(){
-            System.out.println("sans to lege hi  na ladle ");
-      }
-}
-
-class Mammel extends Animal{
-       String type;
-        void  walk(){
-            System.out.println("  chal to skte h hi ladle");
+       void  eat(){
+            System.out.println("kah skte h ladle ");
+       }
+        void breathe(){
+            System.out.println("sans to lege hi");
         }
-         void run(){
-            System.out.println("bhag skte h ladle ");
-         }
-}
+ }
+
  class Fish extends Animal{
-       String typeOfFish;
-        void  isSwim(){
-            System.out.println("ter skte h ladle ");
+      String typeOfFish;
+       void  isSwim(){
+            System.out.println(" ter skte h");
+       }
+ }
+ class  Mammel extends Animal{
+       String typeOfMammel;
+        void walk(){
+  System.out.println("  this can walk");
+
         }
+         void  run(){
+             System.out.println(" bhag to skte h ladle ");
+         }
  }
-  class Bird  extends  Animal{
-         String typeOfBird;
-          void fly(){
-            System.out.println("  ud skte h ladle ");
-          }
+   class  Dog extends Mammel{
+       String breed;
+         void  bark(){
+            System.out.println(" bhnkh  skta h ");
+         }
+   }
 
-  }
- public class OOPS{
-      public  static void main(String[]args){
-            Bird pigeon = new Bird();
-            pigeon.eat();
-       pigeon.fly();
-       Fish  shark = new Fish();
-       shark.isSwim();
-       shark.eat();
-       shark.breathe();
-       Mammel  dog= new Mammel();
-        dog.run();
-        dog.eat();
-        dog.breathe();
+    public class OOPS{
+      public static void main(String[]args){
+              Dog german= new Dog();
+               german.bark();
+               german.breathe();
+               german.eat();
+             Mammel  cow = new Mammel();
+              cow.run();
+               cow.eat();
+                Fish tuna = new Fish();
+                 tuna.eat();
+                 tuna.breathe();
+                 tuna.isSwim();
+      
       }
-
- }
-
-
-
-
-
-
-
+    }
 
 
 
