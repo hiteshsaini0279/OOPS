@@ -686,47 +686,98 @@
 ///multi level inheritance
 
 
-class  Animal{
-      String color;
-       void  eats(){
-               System.out.println("  kha skte h ladle ");
-       }
-        void breathe(){
-            System.out.println("  sans to lege hi ladle ");
-        }
-}
- class Mammel  extends  Animal{
-        int  height;
-            void  fly(){
-                  System.out.println(" ud nhi skte  laadle ");
-            }
-             void isSwim(){
-                   System.out.println("  naa hi ter skte ladle ");
-             }
- }
+// class  Animal{
+//       String color;
+//        void  eats(){
+//                System.out.println("  kha skte h ladle ");
+//        }
+//         void breathe(){
+//             System.out.println("  sans to lege hi ladle ");
+//         }
+// }
+//  class Mammel  extends  Animal{
+//         int  height;
+//             void  fly(){
+//                   System.out.println(" ud nhi skte  laadle ");
+//             }
+//              void isSwim(){
+//                    System.out.println("  naa hi ter skte ladle ");
+//              }
+//  }
    
- class  Dog extends  Mammel{
-         void  bark(){
-              System.out.println(" kutta to bhokega hi laadle !! ");
-         }
- }
+//  class  Dog extends  Mammel{
+//          void  bark(){
+//               System.out.println(" kutta to bhokega hi laadle !! ");
+//          }
+//  }
 
 
 
-public class    OOPS{
-       public static  void main(String[] args){
-             Dog  germanDog = new Dog();
-             germanDog.fly();
-             germanDog.color= "yellow";
-             germanDog.bark();
-             germanDog.eats();
-              System.out.println(germanDog.color);
-       }
+// public class    OOPS{
+//        public static  void main(String[] args){
+//              Dog  germanDog = new Dog();
+//              germanDog.fly();
+//              germanDog.color= "yellow";
+//              germanDog.bark();
+//              germanDog.eats();
+//               System.out.println(germanDog.color);
+//        }
+// }
+
+
+
+/// Hierarchical inheritance
+
+
+
+class Animal{
+      String color;
+      void eat(){
+            System.out.println("kha skte h ");
+      }
+      void breathe(){
+            System.out.println("sans to lege hi  na ladle ");
+      }
 }
 
+class Mammel extends Animal{
+       String type;
+        void  walk(){
+            System.out.println("  chal to skte h hi ladle");
+        }
+         void run(){
+            System.out.println("bhag skte h ladle ");
+         }
+}
+ class Fish extends Animal{
+       String typeOfFish;
+        void  isSwim(){
+            System.out.println("ter skte h ladle ");
+        }
+ }
+  class Bird  extends  Animal{
+         String typeOfBird;
+          void fly(){
+            System.out.println("  ud skte h ladle ");
+          }
 
+  }
+ public class OOPS{
+      public  static void main(String[]args){
+            Bird pigeon = new Bird();
+            pigeon.eat();
+       pigeon.fly();
+       Fish  shark = new Fish();
+       shark.isSwim();
+       shark.eat();
+       shark.breathe();
+       Mammel  dog= new Mammel();
+        dog.run();
+        dog.eat();
+        dog.breathe();
+      }
 
-
+ }
 
 
 
