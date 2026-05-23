@@ -782,60 +782,87 @@
 
 
 //// hybrid level intheritance 
- class Animal{
-      String color;
-       void  eat(){
-            System.out.println("kah skte h ladle ");
-       }
-        void breathe(){
-            System.out.println("sans to lege hi");
-        }
- }
+//  class Animal{
+//       String color;
+//        void  eat(){
+//             System.out.println("kah skte h ladle ");
+//        }
+//         void breathe(){
+//             System.out.println("sans to lege hi");
+//         }
+//  }
 
- class Fish extends Animal{
-      String typeOfFish;
-       void  isSwim(){
-            System.out.println(" ter skte h");
-       }
- }
- class  Mammel extends Animal{
-       String typeOfMammel;
-        void walk(){
-  System.out.println("  this can walk");
+//  class Fish extends Animal{
+//       String typeOfFish;
+//        void  isSwim(){
+//             System.out.println(" ter skte h");
+//        }
+//  }
+//  class  Mammel extends Animal{
+//        String typeOfMammel;
+//         void walk(){
+//   System.out.println("  this can walk");
 
-        }
-         void  run(){
-             System.out.println(" bhag to skte h ladle ");
-         }
- }
-   class  Dog extends Mammel{
-       String breed;
-         void  bark(){
-            System.out.println(" bhnkh  skta h ");
-         }
-   }
+//         }
+//          void  run(){
+//              System.out.println(" bhag to skte h ladle ");
+//          }
+//  }
+//    class  Dog extends Mammel{
+//        String breed;
+//          void  bark(){
+//             System.out.println(" bhnkh  skta h ");
+//          }
+//    }
 
-    public class OOPS{
-      public static void main(String[]args){
-              Dog german= new Dog();
-               german.bark();
-               german.breathe();
-               german.eat();
-             Mammel  cow = new Mammel();
-              cow.run();
-               cow.eat();
-                Fish tuna = new Fish();
-                 tuna.eat();
-                 tuna.breathe();
-                 tuna.isSwim();
+//     public class OOPS{
+//       public static void main(String[]args){
+//               Dog german= new Dog();
+//                german.bark();
+//                german.breathe();
+//                german.eat();
+//              Mammel  cow = new Mammel();
+//               cow.run();
+//                cow.eat();
+//                 Fish tuna = new Fish();
+//                  tuna.eat();
+//                  tuna.breathe();
+//                  tuna.isSwim();
       
+//       }
+//     }
+
+
+
+
+/// compile time polymorphism / method overloading /  state:-static 
+
+
+
+
+
+
+class Calculator{
+      public int  sum(int a, int b){
+   return a+b;
       }
-    }
+      public float sum( float a, float b){
+          return a+b;
+      }
+      public  long sum(long a, long b){
+          return a+b;
+      }
+}
 
+public class OOPS{
+      public static void main(String[]args){
+  Calculator calc= new Calculator();
+  System.out.println(calc.sum(9.2f, 6.90f));
+  System.out.println(calc.sum(2, 3));
+  System.out.println(calc.sum(20383833,89238433 ));
 
-
-
-
+      }
+}
 
 
 
