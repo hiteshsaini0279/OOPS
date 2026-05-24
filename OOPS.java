@@ -842,33 +842,49 @@
 
 
 
-class Calculator{
-      public int  sum(int a, int b){
-   return a+b;
-      }
-      public float sum( float a, float b){
-          return a+b;
-      }
-      public  long sum(long a, long b){
-          return a+b;
-      }
-}
+// class Calculator{
+//       public int  sum(int a, int b){
+//    return a+b;
+//       }
+//       public float sum( float a, float b){
+//           return a+b;
+//       }
+//       public  long sum(long a, long b){
+//           return a+b;
+//       }
+// }
 
-public class OOPS{
-      public static void main(String[]args){
-  Calculator calc= new Calculator();
-  System.out.println(calc.sum(9.2f, 6.90f));
-  System.out.println(calc.sum(2, 3));
-  System.out.println(calc.sum(20383833,89238433 ));
+// public class OOPS{
+//       public static void main(String[]args){
+//   Calculator calc= new Calculator();
+//   System.out.println(calc.sum(9.2f, 6.90f));
+//   System.out.println(calc.sum(2, 3));
+//   System.out.println(calc.sum(20383833,89238433 ));
 
-      }
-}
-
-
+//       }
+// }
 
 
 
 
+/// runtime polymorphism / method / state:-dynamic
+class Animal{
+    String color;
+    void eat(){
+        System.out.println("eat according to animal");
+    }
+} 
+ class Mammel extends Animal{
+    void eat(){
+        System.out.println("eat grasss");
+    }
+ }
+ public class OOPS{
+    public static void main(String[] args) {
+        Mammel cow= new Mammel();
+        cow.eat();
+    }}
+ 
 
 
 
