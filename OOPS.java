@@ -868,24 +868,58 @@
 
 
 /// runtime polymorphism / method / state:-dynamic
-class Animal{
-    String color;
+// class Animal{
+//     String color;
+//     void eat(){
+//         System.out.println("eat according to animal");
+//     }
+// } 
+//  class Mammel extends Animal{
+//     void eat(){
+//         System.out.println("eat grasss");
+//     }
+//  }
+//  public class OOPS{
+//     public static void main(String[] args) {
+//         Mammel cow= new Mammel();
+//         cow.eat();
+//     }}
+ 
+
+/// Abstraction  -> it shows only the imp features and it hiding the complex implementation details 
+/*
+-> it can not create an object 
+-> but we can create create an contructor in this class
+ */
+abstract  class Animal{
     void eat(){
-        System.out.println("eat according to animal");
+        System.out.println("animal can eat");
     }
-} 
- class Mammel extends Animal{
+    abstract void walk();
+}
+class Horse extends Animal{
+    void walk(){
+        System.out.println("horse wwalks with 2 legs ");
+    }
     void eat(){
-        System.out.println("eat grasss");
+        System.out.println(" horse eats grass");
+    }
+}
+ class Chicken extends Animal{
+    void walk(){
+        System.out.println(" chicken walks with 2  legs");
     }
  }
  public class OOPS{
-    public static void main(String[] args) {
-        Mammel cow= new Mammel();
-        cow.eat();
-    }}
- 
-
+    public static  void main(String[]args){
+        Horse h= new Horse();
+         h.eat();
+         h.walk();
+         Chicken c = new Chicken();
+         c.walk();
+         c.eat();
+    }
+ }
 
 
 
