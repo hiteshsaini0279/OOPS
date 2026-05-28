@@ -891,39 +891,63 @@
 -> it can not create an object 
 -> but we can create create an contructor in this class
  */
-abstract  class Animal{
-    void eat(){
-        System.out.println("animal can eat");
-    }
-    abstract void walk();
+// abstract  class Animal{
+//     void eat(){
+//         System.out.println("animal can eat");
+//     }
+//     abstract void walk();
+// }
+// class Horse extends Animal{
+//     void walk(){
+//         System.out.println("horse wwalks with 2 legs ");
+//     }
+//     void eat(){
+//         System.out.println(" horse eats grass");
+//     }
+// }
+//  class Chicken extends Animal{
+//     void walk(){
+//         System.out.println(" chicken walks with 2  legs");
+//     }
+//  }
+//  public class OOPS{
+//     public static  void main(String[]args){
+//         Horse h= new Horse();
+//          h.eat();
+//          h.walk();
+//          Chicken c = new Chicken();
+//          c.walk();
+//          c.eat();
+//     }
+//  }
+
+
+/// interfaces -> intefaces is blue print of class
+
+interface ChessPlayer{
+   void moves();
 }
-class Horse extends Animal{
-    void walk(){
-        System.out.println("horse wwalks with 2 legs ");
-    }
-    void eat(){
-        System.out.println(" horse eats grass");
+class Queen implements ChessPlayer{
+    public void moves(){
+        System.out.println(" up, down, right ,left");
     }
 }
- class Chicken extends Animal{
-    void walk(){
-        System.out.println(" chicken walks with 2  legs");
+class Rook implements ChessPlayer{
+    public void moves(){
+        System.out.println(" diagonal left ,right up down");
+    }
+}
+ class King implements ChessPlayer{
+    public void moves(){
+        System.out.println(" left,up ,down ,->  one step  only every side");
     }
  }
  public class OOPS{
-    public static  void main(String[]args){
-        Horse h= new Horse();
-         h.eat();
-         h.walk();
-         Chicken c = new Chicken();
-         c.walk();
-         c.eat();
-    }
+  public  static  void main(String[]args){
+    Queen q= new Queen();
+    q.moves();
+  }
  }
-
-
-
-
 
 
 
