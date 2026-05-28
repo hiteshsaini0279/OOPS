@@ -924,34 +924,56 @@
 
 /// interfaces -> intefaces is blue print of class
 
-interface ChessPlayer{
-   void moves();
+// interface ChessPlayer{
+//    void moves();
+// }
+// class Queen implements ChessPlayer{
+//     public void moves(){
+//         System.out.println(" up, down, right ,left");
+//     }
+// }
+// class Rook implements ChessPlayer{
+//     public void moves(){
+//         System.out.println(" diagonal left ,right up down");
+//     }
+// }
+//  class King implements ChessPlayer{
+//     public void moves(){
+//         System.out.println(" left,up ,down ,->  one step  only every side");
+//     }
+//  }
+//  public class OOPS{
+//   public  static  void main(String[]args){
+//     Queen q= new Queen();
+//     q.moves();
+//   }
+//  }
+
+
+/// static keywrod -> it is useful for  when we create an static varible we can shared that variable to multible  methods of given classes 
+
+
+
+
+class   Student {
+    String name;
+    int rollNo;
+    static  String schoolName;
+
+    void setName( String schoolName){
+        this.schoolName=schoolName;
+    }
+
 }
-class Queen implements ChessPlayer{
-    public void moves(){
-        System.out.println(" up, down, right ,left");
+
+public class OOPS{
+    public static void main(String[]args){
+        Student s1= new Student();
+        s1.schoolName="shvp";
+        Student s2=  new Student();
+        System.out.println(s2.schoolName);
     }
 }
-class Rook implements ChessPlayer{
-    public void moves(){
-        System.out.println(" diagonal left ,right up down");
-    }
-}
- class King implements ChessPlayer{
-    public void moves(){
-        System.out.println(" left,up ,down ,->  one step  only every side");
-    }
- }
- public class OOPS{
-  public  static  void main(String[]args){
-    Queen q= new Queen();
-    q.moves();
-  }
- }
-
-
-
-
 
 
 
